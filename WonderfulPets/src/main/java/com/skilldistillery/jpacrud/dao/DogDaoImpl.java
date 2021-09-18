@@ -31,24 +31,28 @@ public class DogDaoImpl implements DogDAO {
 
 	@Override
 	public boolean addDog(Dog dog) {
-		em.persist(dog);
+		em.merge(dog);
 		return em.contains(dog);
 	}
 
 	@Override
 	public boolean updateDog(Dog dog) {
 		Dog managedDog = em.find(Dog.class, dog.getId());
-		managedDog.setName(dog.getName());
-		managedDog.setAge(dog.getAge());
-		managedDog.setBreed(dog.getBreed());
-		managedDog.setWeight(dog.getWeight());
+		if(managedDog != null) {
+			managedDog.setName(dog.getName());
+			managedDog.setAge(dog.getAge());
+			managedDog.setBreed(dog.getBreed());
+			managedDog.setWeight(dog.getWeight());
+		}
 		return em.contains(managedDog);
 	}
 
 	@Override
 	public boolean deleteDog(int dogId) {
 		Dog managedDog = em.find(Dog.class, dogId);
-		em.remove(managedDog);
+		if(managedDog != null) {
+			em.remove(managedDog);
+		}
 		return !em.contains(managedDog);
 	}
 

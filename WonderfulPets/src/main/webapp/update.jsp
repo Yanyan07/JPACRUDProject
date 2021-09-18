@@ -9,16 +9,10 @@
 <title>Update a Dog</title>
 </head>
 <body>
-
-<h3>Please enter information to update a dog:</h3>
-<form action="update.do" method="get">
-	<label>Dog ID: </label><input type="text" name="id" value="id" /><br/>
-	<label>Dog Name: </label><input type="text" name="name" value="name" /><br/>
-	<label>Dog Age: </label><input type="text" name="age" value="age" /><br/>
-	<label>Dog Breed: </label><input type="text" name="breed" value="breed" /><br/>
-	<label>Dog Weight: </label><input type="text" name="weight" value="weight" /><br/>
-	<input type="submit" value="Update a Dog" /><br/>
+<h3>Please enter a dog ID to update a dog:</h3>
+<form action="get.do" method="get" >
+	<label>Dog ID to be updated: <input type="text" name="id" value="id" /></label><br/>
+	<input type="submit" value="Update Dog By ID" /><br/>
 </form>
-
 </body>
 </html>

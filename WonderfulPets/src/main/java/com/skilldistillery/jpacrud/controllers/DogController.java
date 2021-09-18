@@ -15,8 +15,7 @@ public class DogController {
 	private DogDAO dao;
 	
 	@RequestMapping(path = {"/", "home.do"})
-	public String home(Model model) {
-		model.addAttribute("dogs", dao.findAll());
+	public String home() {
 		return "home";
 	}
 	
@@ -38,6 +37,13 @@ public class DogController {
 		return "addView";
 	}
 	
+	@RequestMapping(path = "get.do")
+	public String getDog(int id, Model model) {
+		Dog dog = dao.findById(id);
+		model.addAttribute("dog", dog);
+		return "updateForm";
+	}
+	
 	@RequestMapping(path = "update.do")
 	public String updateDog(Dog dog, Model model) {
 		boolean isUpdated = dao.updateDog(dog);
@@ -54,5 +60,11 @@ public class DogController {
 			model.addAttribute("isDeleted", isDeleted);
 		}
 		return "deleteView";
+	}
+	
+	@RequestMapping(path = "findAll.do")
+	public String findAll(Model model) {
+		model.addAttribute("dogs", dao.findAll());
+		return "findAllView";
 	}
 }

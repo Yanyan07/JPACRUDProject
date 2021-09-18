@@ -12,7 +12,7 @@
 
 <h3>Please enter dog ID to search:</h3>
 <form action="search.do" method="get">
-	<label>Dog ID:</label><input type="text" name="id"  /><br/>
+	<label>Dog ID: <input type="text" name="id"  /></label><br/>
 	<input type="submit" value="Search By Id" /><br/>
 </form>
 

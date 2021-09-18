@@ -42,7 +42,7 @@ public class DogDaoImpl implements DogDAO {
 		managedDog.setAge(dog.getAge());
 		managedDog.setBreed(dog.getBreed());
 		managedDog.setWeight(dog.getWeight());
-		return em.contains(dog);
+		return em.contains(managedDog);
 	}
 
 	@Override

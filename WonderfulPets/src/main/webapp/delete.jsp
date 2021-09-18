@@ -12,7 +12,7 @@
 
 <h3>Please enter information to delete a dog:</h3>
 <form action="delete.do" method="get">
-	<label>Dog ID:</label><input type="text" name="id" value="id" /><br/>
+	<label>Dog ID: <input type="text" name="id" value="id" /></label><br/>
 	<input type="submit" value="Delete By Id" />
 </form>
 

@@ -12,28 +12,7 @@
 
 	<h1>Welcome to Wonderful Dogs!</h1>
 
-	<h3>Dog list:</h3>
-	<table>
-		<tr>
-			<th>Dog ID:</th>
-			<th>Dog Name:</th>
-			<th>Dog Age:</th>
-			<th>Dog Breed:</th>
-			<th>Dog Weight:</th>
-		</tr>
-	<c:forEach var="dog" items="${dogs}">
-		<tr>
-			<td>${dog.id}</td>
-			<td>${dog.name}</td>
-			<td>${dog.age}</td>
-			<td>${dog.breed}</td>
-			<td>${dog.weight}</td>
-		
-		</tr>
-		<br/>
-	</c:forEach>
-	</table>
-	<hr/>
+	
 	<h3>Search a dog</h3>
 	<a href="search.jsp">Search</a>
 
@@ -46,5 +25,7 @@
 	<h3>Delete a dog</h3>
 	<a href="delete.jsp">Delete</a>
 
+	<h3>Show all dogs</h3>
+	<a href="findAll.jsp">Show All</a>
 </body>
 </html>

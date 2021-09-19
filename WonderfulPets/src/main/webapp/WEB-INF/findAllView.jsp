@@ -6,11 +6,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="style/main.css" rel="stylesheet" type="text/css">
+
 <title>Show All Dogs</title>
 </head>
 <body>
-	<h3>Dogs list:</h3>
-	<table>
+	<h2>Dogs list:</h2>
+	<div>
+	<table id="table-div">
 		<tr>
 			<th>Dog ID:</th>
 			<th>Dog Name:</th>
@@ -25,11 +28,11 @@
 				<td>${dog.age}</td>
 				<td>${dog.breed}</td>
 				<td>${dog.weight}</td>
-
 			</tr>
-			<br />
+			
 		</c:forEach>
 	</table>
+	</div>
 	<hr />
 	<a href="home.do">Back to Home</a>
 </body>

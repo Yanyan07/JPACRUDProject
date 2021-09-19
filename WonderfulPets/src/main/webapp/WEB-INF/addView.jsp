@@ -6,10 +6,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="style/main.css" rel="stylesheet" type="text/css">
+
 <title>Add a New Dog</title>
 </head>
 <body>
-	<h3>The Result of Adding a New Dog:</h3>
+	<h2>The Result of Adding a New Dog:</h2>
+	<div>
 	<c:choose>
 		<c:when test="${isAdded}">
 		A new dog has been added to database!
@@ -18,6 +21,7 @@
 		Fail to add a new dog!
 	</c:otherwise>
 	</c:choose>
+	</div>
 	<hr />
 	<a href="home.do">Back to Home</a>
 </body>

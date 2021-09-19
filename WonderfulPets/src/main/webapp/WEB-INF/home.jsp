@@ -6,13 +6,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="style/main.css" rel="stylesheet" type="text/css">
+
 <title>Wonderful Pets</title>
 </head>
 <body>
 
 	<h1>Welcome to Wonderful Dogs!</h1>
 
-	
+	<div>
 	<h3>Search a dog</h3>
 	<a href="search.jsp">Search</a>
 
@@ -27,5 +29,8 @@
 
 	<h3>Show all dogs</h3>
 	<a href="findAll.jsp">Show All</a>
+	</div>
+	
+	
 </body>
 </html>

@@ -22,30 +22,26 @@ class WonderfulPetsApplicationTests {
 	private DogDAO dao;
 	@PersistenceContext
 	private EntityManager em;
-	
-	@Test
-	void contextLoads() {
-	}
 
 	@Test
 	void test_findById() {
-		Dog dog = dao.findById(1);
+		Dog dog = dao.findById(2);
 		assertNotNull(dog);
-		assertEquals("haley", dog.getName());
-		assertEquals("siberian husky", dog.getBreed());
+		assertEquals("randy", dog.getName());
+		assertEquals("golden retriever", dog.getBreed());
 	}
 	
 	@Test 
 	void test_findAll(){
 		List<Dog> dogs = dao.findAll();
 		assertNotNull(dogs);
-		assertEquals(12, dogs.size());
-		assertEquals("haley", dogs.get(0).getName());
+		assertEquals(14, dogs.size());
+		assertEquals("randy", dogs.get(0).getName());
 	}
 	
 //	@Test
 //	void test_addDog(){
-//		int id = 12;
+//		int id = 20;
 //		Dog dog = new Dog();
 //		dog.setName("Pie");
 //		dog.setAge(2);

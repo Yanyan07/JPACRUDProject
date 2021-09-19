@@ -6,15 +6,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="style/main.css" rel="stylesheet" type="text/css">
+
 <title>Delete a Dog</title>
 </head>
 <body>
 
-<h3>Please enter information to delete a dog:</h3>
+<h2>Please enter information to delete a dog:</h2>
+<div>
 <form action="delete.do" method="get">
 	<label>Dog ID: <input type="text" name="id" value="id" /></label><br/>
 	<input type="submit" value="Delete By Id" />
 </form>
+</div>
 
 </body>
 </html>

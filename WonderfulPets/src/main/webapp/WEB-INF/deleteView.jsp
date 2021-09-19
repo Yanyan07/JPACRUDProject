@@ -6,10 +6,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="style/main.css" rel="stylesheet" type="text/css">
+
 <title>Delete a Dog</title>
 </head>
 <body>
-	<h3>The Result of Deleting a Dog:</h3>
+	<h2>The Result of Deleting a Dog:</h2>
+	<div>
 	<c:choose>
 		<c:when test="${isDeleted}">
 		The Dog information has been deleted!
@@ -18,6 +21,7 @@
 		Fail to delete the dog information!
 	</c:otherwise>
 	</c:choose>
+	</div>
 	<hr />
 	<a href="home.do">Back to Home</a>
 

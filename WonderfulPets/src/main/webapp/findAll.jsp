@@ -6,12 +6,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="style/main.css" rel="stylesheet" type="text/css">
+
 <title>Find All Dogs</title>
 </head>
 <body>
-	<h3>Please show all dog information:</h3>
+	<h2>Please show all dog information:</h2>
+	<div>
 	<form action="findAll.do" method="get">
-		 <input type="submit" value="Find All Dogs" /><br />
+		 <input type="submit" value="Find All Dogs" />
 	</form>
+	</div>
 </body>
 </html>

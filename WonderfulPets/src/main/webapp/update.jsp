@@ -6,13 +6,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="style/main.css" rel="stylesheet" type="text/css">
+
 <title>Update a Dog</title>
 </head>
 <body>
-<h3>Please enter a dog ID to update a dog:</h3>
+<h2>Please enter a dog ID to update a dog:</h2>
+<div>
 <form action="get.do" method="get" >
 	<label>Dog ID to be updated: <input type="text" name="id" value="id" /></label><br/>
-	<input type="submit" value="Update Dog By ID" /><br/>
+	<input type="submit" value="Update Dog By ID" />
 </form>
+</div>
 </body>
 </html>

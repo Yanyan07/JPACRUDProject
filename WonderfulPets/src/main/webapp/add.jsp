@@ -6,11 +6,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="style/main.css" rel="stylesheet" type="text/css">
+
 <title>Add A new Dog</title>
 </head>
 <body>
 
-<h3>Please enter information to add a new dog:</h3>
+<h2>Please enter information to add a new dog:</h2>
+<div>
 <form action="add.do" method="get">
 	<label>Dog Name: <input type="text" name="name" value="name" /></label><br/>
 	<label>Dog Age: <input type="text" name="age" value="age" /></label><br/>
@@ -18,6 +21,7 @@
 	<label>Dog Weight: <input type="text" name="weight" value="weight" /></label><br/>
 	<input type="submit" value="Add a Dog" /><br/>
 </form>
+</div>
 
 </body>
 </html>

@@ -6,9 +6,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="style/main.css" rel="stylesheet" type="text/css">
 
 <title>Show All Dogs</title>
+<jsp:include page="../bootstrapHead.jsp"></jsp:include>	
 </head>
 <body>
 	<h2>Dogs list:</h2>
@@ -35,5 +35,7 @@
 	</div>
 	<hr />
 	<a href="home.do">Back to Home</a>
+	
+<jsp:include page="../bootstrapFoot.jsp"></jsp:include>
 </body>
 </html>

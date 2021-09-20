@@ -6,9 +6,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="style/main.css" rel="stylesheet" type="text/css">
 
 <title>Wonderful Pets</title>
+<jsp:include page="../bootstrapHead.jsp"></jsp:include>
 </head>
 <body>
 
@@ -31,6 +31,6 @@
 	<a href="findAll.jsp">Show All</a>
 	</div>
 	
-	
+<jsp:include page="../bootstrapFoot.jsp"></jsp:include>	
 </body>
 </html>

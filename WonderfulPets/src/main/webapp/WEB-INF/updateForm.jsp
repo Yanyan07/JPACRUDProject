@@ -6,9 +6,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="style/main.css" rel="stylesheet" type="text/css">
 
 <title>Update a Dog</title>
+<jsp:include page="../bootstrapHead.jsp"></jsp:include>	
 </head>
 <body>
 <h2>Please enter information to update a dog:</h2>
@@ -29,5 +29,7 @@
 	</c:otherwise>
 </c:choose>
 </div>
+
+<jsp:include page="../bootstrapFoot.jsp"></jsp:include>
 </body>
 </html>

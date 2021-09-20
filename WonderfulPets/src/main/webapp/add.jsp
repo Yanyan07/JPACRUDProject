@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="style/main.css" rel="stylesheet" type="text/css">
+<jsp:include page="bootstrapHead.jsp"></jsp:include>	
 
 <title>Add A new Dog</title>
 </head>
@@ -23,5 +23,6 @@
 </form>
 </div>
 
+<jsp:include page="bootstrapFoot.jsp"></jsp:include>
 </body>
 </html>

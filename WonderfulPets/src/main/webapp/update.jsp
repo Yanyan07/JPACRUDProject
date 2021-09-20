@@ -6,9 +6,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="style/main.css" rel="stylesheet" type="text/css">
 
 <title>Update a Dog</title>
+<jsp:include page="bootstrapHead.jsp"></jsp:include>	
 </head>
 <body>
 <h2>Please enter a dog ID to update a dog:</h2>
@@ -18,5 +18,7 @@
 	<input type="submit" value="Update Dog By ID" />
 </form>
 </div>
+
+<jsp:include page="bootstrapFoot.jsp"></jsp:include>
 </body>
 </html>

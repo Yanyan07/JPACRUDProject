@@ -6,9 +6,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link href="style/main.css" rel="stylesheet" type="text/css">
 
 <title>Find All Dogs</title>
+<jsp:include page="bootstrapHead.jsp"></jsp:include>	
 </head>
 <body>
 	<h2>Please show all dog information:</h2>
@@ -17,5 +17,7 @@
 		 <input type="submit" value="Find All Dogs" />
 	</form>
 	</div>
+	
+<jsp:include page="bootstrapFoot.jsp"></jsp:include>
 </body>
 </html>

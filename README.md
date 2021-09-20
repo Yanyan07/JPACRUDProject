@@ -1,5 +1,5 @@
 ### Overview
-This is a full stack Spring boot project. It perform create database and a subsequent table, retrieving data, update data and delete data from database.
+This is a full stack Spring boot project. It perform create database and a subsequent table, retrieving data, update data and delete data from database. This project uses JPQL to access database. It receive information from users(the webpage), and transfer such information(like add date to database) to server, then the data will be updated in the database. And the result of this operation will be show in the webpage to users.
 
 ### Technologies Used
 * Spring Boot
